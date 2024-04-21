@@ -379,6 +379,21 @@ html, body, .hello-parent {
             font-size: 5vh;
         }
     }
+    .header{
+      display: none;
+    }
+    .icon{
+      display: flex !important;
+    }
+    .card{
+      display: flex !important; 
+    }
+    .title{
+      display: flex !important;
+    }
+    .mobile__nav{
+      display: block;
+    }
 }
 
 @media (max-width:460px) {
@@ -390,4 +405,112 @@ html, body, .hello-parent {
             font-size: 12px;
         }
     }
+    .header{
+      display: none;
+    }
+    .icon{
+      display: block;
+    }
+    .card{
+      display: block;
+    }
+    .title{
+      display: block;
+    }
+}
+/* Dropdown Button */
+.dropbtn {
+  
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  opacity: 0;
+  animation: ani 1s forwards;
+  display: block;
+}
+
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: rgba(33, 39, 41, 0.1); 
+  border-radius: 10%;
+}
+.card {
+  display: none;
+  background-color: #fff;
+  
+  box-shadow: 0px 1.5px 5.4px rgba(0, 0, 0, 0.054),
+    0px 3.7px 10.9px rgba(0, 0, 0, 0.068), 0px 7px 16.8px rgba(0, 0, 0, 0.074),
+    0px 12.5px 24.6px rgba(0, 0, 0, 0.076),
+    0px 23.4px 38.1px rgba(0, 0, 0, 0.08), 0px 56px 80px rgba(0, 0, 0, 0.1);
+  height: 76px;
+ 
+  transition: height 400ms;
+  -webkit-tap-highlight-color: #00000010;
+}
+.card.active {
+  height: 400px;
+ 
+}
+.title {
+  display: none;
+  font-family: sans-serif;
+  font-size: 18px;
+  margin-top: 8px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.row {
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  transition: height 400ms;
+  width: 200px;
+}
+.icon {
+  display: none;
+  fill: none;
+  margin-top: 0px;
+  stroke: #000;
+  stroke-width: 12;
+  stroke-linecap: square;
+  stroke-linejoin: round;
 }
