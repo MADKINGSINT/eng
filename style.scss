@@ -383,13 +383,13 @@ html, body, .hello-parent {
       display: none;
     }
     .icon{
-      display: flex !important;
+      display: block !important;
     }
     .card{
-      display: flex !important; 
+      display: block !important; 
     }
     .title{
-      display: flex !important;
+      display: block !important;
     }
     .mobile__nav{
       display: block;
@@ -485,7 +485,7 @@ html, body, .hello-parent {
 }
 .card.active {
   height: 400px;
- 
+  
 }
 .title {
   display: none;
@@ -513,4 +513,38 @@ html, body, .hello-parent {
   stroke-width: 12;
   stroke-linecap: square;
   stroke-linejoin: round;
+}
+.inactive{
+  display: none !important;
+}
+.heder__details{
+  list-style: none;
+}
+.nav__url{
+  border-radius: 30px;
+  display: flex;
+   list-style-type: none;
+    color: black;
+    font-size: 20px;
+    width: 300px;
+    height: 40px;
+    text-decoration: none;
+    font-family: Montserrat;
+    background-color: #9b9b9b;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.content{
+
+  
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+.nav__logo{
+  width: 132px;
+  height: 54px;
+  display: flex;
 }

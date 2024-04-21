@@ -15,6 +15,7 @@ const row = document.querySelector(".row");
 const animate1 = document.querySelector(".animate1");
 const animate2 = document.querySelector(".animate2");
 const animate3 = document.querySelector(".animate3");
+const content = document.querySelector(".content")
 
 // Keyframes
 const values1 = [
@@ -52,8 +53,11 @@ function handleClick() {
 
   if (isExpanded) {
     card.classList.remove("active");
+    content.classList.add("inactive")
   } else {
     card.classList.add("active");
+    content.classList.remove("inactive")
+
   }
 
   toggleAnimation(values1, animate1);
