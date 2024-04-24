@@ -74,6 +74,7 @@ body {
 .a {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .a-item {
   padding: 18px 10px;
@@ -112,4 +113,10 @@ body {
 }
 .result-q {
   width: 200px;
+}
+
+.audio {
+  display: block !important;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=quiz.css.map */

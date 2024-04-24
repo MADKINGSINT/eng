@@ -72,6 +72,7 @@ body {
 .a {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	&-item {
 		padding: 18px 10px;
 		background-color: #131417;
@@ -109,4 +110,9 @@ body {
 	&-q {
 		width: 200px;
 	}
+}
+.audio{
+	display: block !important;
+	display: flex;
+	justify-content: center;
 }

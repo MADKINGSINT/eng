@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    
+
+</head>
+<body>
+    <header class="header">
+      
+        <ul class="header__ul">
+          <li class="header__url"><a class="header__url" href="#">Домашняя</a></li>
+         <div class="dropdown">
+          <li class="dropbtn header__url"><a class="header__url" href="./attractions.html">Развлечения</a></li>
+          <div class="dropdown-content">
+            <a class="header__url" href="#">Полезные видео</a>
+            <a class="header__url" href="./quiz.html">Игры</a>
+            
+          </div>
+         </div>
+         <li class="header__url"><img class="header__logo" src="./img/logo.png"></img></li>
+         <div class="dropdown">
+          <li class="header__url dropbtn"><a class="header__url" href="./routs.html">Маршруты</a></li>
+          <div class="dropdown-content">
+            <a class="header__url" href="./english-learning.html">англ. студии в Кудрово</a>
+            <a class="header__url" href="#">Маршруты по Питеру</a>
+            
+            
+          </div>
+         </div>
+          
+  
+          <li class="header__url"><a class="header__url" href="./prepring.html">Подготовка к ОГЭ/ЕГЭ</a></li>
+        </ul>
+      </header>
+      <nav class="mobile__nav">
+        <div class="card">
+          
+          <div class="row" onclick="handleClick()" role="button" tabindex="0" aria-expanded="false" aria-label="Open Menu">
+          
+            <img src="./img/logo.png" alt="" class="nav__logo">
+            <svg width="32" height="32" viewBox="0 0 100 100" class="icon">
+              <path class="path1">
+                <a href="#"govno></a>
+                <animate class="animate1" attributeName="d" dur="0.35s" repeatCount="1" fill="freeze" />
+              </path>
+              <path class="path2">
+                <animate class="animate2" attributeName="d" dur="0.35s" repeatCount="1" fill="freeze" />
+              </path>
+              <path class="path3">
+                <animate class="animate3" attributeName="d" dur="0.35s" repeatCount="1" fill="freeze" />
+              </path>
+            </svg>
+          </div>
+          <div class="content inactive" >
+            <a class="nav__url" href="/">Домашняя</a>
+            <a href="./quiz.html" class="nav__url">Квизы</a>
+            <a href="/" class="nav__url">Полезные видео</a>
+            <a href="/" class="nav__url">Маршруты по Питеру</a>
+            <a href="./english-learning.html" class="nav__url">Англ. клубы</a>
+            <a href="./oge.html" class="nav__url">Подготовка к ОГЭ/ЕГЭ</a>
+  
+  
+           
+  
+          </div>
+        </div>
+      </nav>
+      <main class="oge">
+        <a class="oge__text" href="./oge1.html">Понимание основного содержания прослушанного текста</a>
+        <a class="oge__text" href="./oge2.html">Грамматические навыки</a>
+        <a class="oge__text" href="./oge3.html">Понимание основного содержания прочитанного текста</a>
+      </main>
+</body>
+</html>

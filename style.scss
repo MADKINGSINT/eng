@@ -530,7 +530,7 @@ html, body, .hello-parent {
     height: 40px;
     text-decoration: none;
     font-family: Montserrat;
-    background-color: #9b9b9b;
+    background-color: #ffd000;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -556,4 +556,27 @@ html, body, .hello-parent {
   flex-wrap: nowrap;
   text-align: center;
 
+}
+.oge{
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  &__text{
+    text-decoration: none;
+    color: #000;
+    background-color: #ffd000;
+    width: 326px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 60px;
+    align-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    border-radius: 40px;
+    
+  }
 }
